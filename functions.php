@@ -66,6 +66,14 @@ function hackeryou_scripts() {
   );
 
   wp_enqueue_script(
+  	'flickityjs',
+  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js",
+  	false, //dependencies
+  	null, //version number
+  	true //load in footer
+  );
+
+  wp_enqueue_script(
     'plugins', //handle
     get_template_directory_uri() . '/js/plugins.js', //source
     false, //dependencies
