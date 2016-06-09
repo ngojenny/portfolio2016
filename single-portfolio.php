@@ -39,7 +39,7 @@
                     <?php  
                     while(has_sub_field('images')) {
                     ?>
-                    <div class="gallery-item">
+                    <div class="gallery-item" style="background:<?php echo get_field('background_color') ?>">
                         <?php $portfolioImage = get_sub_field('image') ?>
                         <img src="<?php echo $portfolioImage['url'] ?> " alt="">
                     </div>

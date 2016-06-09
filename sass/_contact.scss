@@ -1,0 +1,124 @@
+/* CONTACT SECTION */
+.contact {
+	position: relative;
+	background-color: $blue;
+	.flex-container {
+		justify-content: space-between;
+	}
+
+	h2 {
+		display: inline-block;
+		border-bottom: 6px solid #ffffff;
+	}
+}
+.tinphone {
+	width: 27%;
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+}
+
+.contact-info {
+	margin-top: 10px;
+	width: 30%;
+	p {
+		margin: 0 10px;
+		padding: 10px 0;
+		letter-spacing: 1px;
+	}
+}
+
+.contact-method {
+	display: flex;
+	align-items: center;
+}
+
+.wpcf7 {
+	width: 60%;
+}
+
+.wpcf7-form {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	p {
+		margin: 0;
+		margin-bottom: -10px;
+	}
+	.accessibility {
+		visibility: hidden;
+	}
+
+	p:nth-of-type(1){
+		width: calc(50% - 5px);
+		margin-right: 5px;
+	}
+
+	p:nth-of-type(2){
+		width: calc(50% - 5px);
+		margin-left: 5px;
+	}
+	p:nth-of-type(3) {
+		width: 100%;
+	}
+
+	p:nth-of-type(4) {
+		width: 100%;
+	}
+
+	label {
+		display: block;
+		width: 100%;
+	}
+	input,
+	textarea {
+		border: none;
+		padding: 10px;
+		background-color: rgba(255,255,255, 0.6);
+		width: 100%;
+		font-family: $headingFont;
+		font-weight: 300;
+	}
+
+	input[type=submit] {
+		margin-top: 20px;
+	}
+	
+	::-webkit-input-placeholder {
+		font-family: $headingFont;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		font-family: $headingFont;
+		font-weight: 300;
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		font-family: $headingFont;
+		font-weight: 300;
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+	}
+
+	:-ms-input-placeholder {  
+		font-family: $headingFont;
+		font-weight: 300;
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+	}
+}
+
+.sideways {
+	position: absolute;
+	bottom: 200px;
+	left: 38%;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $grey;
+	transform: rotate(-90deg)
+}

@@ -1,0 +1,73 @@
+header {
+	background-color: $blue;
+	padding: 20px 0;
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	text-align: center;
+	h1 {
+		margin:0;
+		font-size: 6.5rem;
+		font-weight: lighter;
+		letter-spacing: 8px;
+		color: #ffffff;
+		text-transform: lowercase;
+	}
+	h2 {
+		font-family: $baseFont;
+		font-size: 1.9rem;
+		font-weight: 300;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		margin: 5px 0 0;
+	}
+	.header-title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)
+	}
+	img {
+		position: absolute;
+	}
+
+	.keyboard {
+		width: 42%;
+		top: 53%;
+		right: -15%;
+	}
+	.pencil {
+		width: 14%;
+		transform: rotate(44deg);
+		top: 54%;
+		right: 5%;
+	}
+
+	.notebook {
+		width: 16%;
+		transform: rotate(27deg);
+		bottom: -15%;
+		left: -5%;
+	}
+
+	.iphone {
+		width: 18%;
+		transform: rotate(-21deg);
+		bottom: -18%;
+		left: 0%;
+	}
+	.paperclip {
+		width: 5%;
+	}
+	.paperclip1 {
+		transform: rotate(122deg);
+		bottom: 30%;
+		left: 13%;
+	}
+
+	.paperclip2 {
+		transform: rotate(23deg);
+		bottom: 17%;
+		left: 15%;
+	}
+}

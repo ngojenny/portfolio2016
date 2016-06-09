@@ -8,8 +8,15 @@
 */
 
 @import 'normalize';
+@import 'variables';
+@import 'global';
 @import 'typography';
 @import 'navigation';
+@import 'header';
+@import 'about';
+@import 'work';
+@import 'skills';
+@import 'contact';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -46,13 +53,14 @@ body {
 	width: 100%;
 }
 
+
+//test
 .gallery-item {
 	width: 100%;
 	background: purple;
 	border: 2px solid black;
 	text-align: center;
 }
-
 
 
 

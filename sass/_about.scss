@@ -1,0 +1,19 @@
+/*ABOUT SECTION STYLES*/
+.about {
+	p {
+		font-family: $headingFont;
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+		line-height: 2.2;
+	}
+	a {
+		font-family: $headingFont;
+		color: $grey;
+	}
+
+	h2 {
+		display: inline-block;
+		border-bottom: 6px solid $mint;
+
+	}	
+}
