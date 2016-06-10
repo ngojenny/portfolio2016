@@ -42,7 +42,7 @@
                 }
                 ?>
             </div>
-            <a class="btn btn-single" href="">View live</a>
+            <a class="btn btn-single" href="<?php the_field('view_live')?>">View live</a>
             <div class="wrapper">
                 <h3>About project</h3>
                 <p><?php the_content(); ?></p>

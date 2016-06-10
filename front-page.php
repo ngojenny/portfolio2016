@@ -81,7 +81,7 @@ get_header();  ?>
 
 							<div class="portfolio-overlay">
 								<a class="btn btn-front btn-live" href="<?php the_permalink() ?>">Details</a>
-								<a class="btn btn-front btn-live" href="">View live</a>
+								<a class="btn btn-front btn-live" href="<?php the_field('view_live')?>">View live</a>
 							</div>
 						</div>
 					<?php
