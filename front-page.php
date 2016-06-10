@@ -39,7 +39,7 @@ get_header();  ?>
 		<img class="notebook" src="wp-content/themes/portfolio2016/images/notebook2.svg" alt="White outline of notebook">
 		<img class="iphone" src="wp-content/themes/portfolio2016/images/iphone6.svg" alt="White outline of iPhone6">
 		<img class="keyboard" src="wp-content/themes/portfolio2016/images/keyboard.svg" alt="White outline of keyboard">
-		<img class="paperclip paperclip1" src="wp-content/themes/portfolio2016/images/paperclip.svg" alt="White outline of paperclip">
+		<img id="demo" class="paperclip paperclip1" src="wp-content/themes/portfolio2016/images/paperclip.svg" alt="White outline of paperclip">
 		<img class="paperclip paperclip2" src="wp-content/themes/portfolio2016/images/paperclip.svg" alt="White outline of paperclip">
 		<img class="pencil" src="wp-content/themes/portfolio2016/images/pencil.svg" alt="White outline of mechanical pencil">
 	</div> <!-- /.wrapper -->

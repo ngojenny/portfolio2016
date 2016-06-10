@@ -76,6 +76,23 @@ function hackeryou_scripts() {
   );
 
   wp_enqueue_script(
+  	'smoothScroll',
+  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js",
+  	false, //dependencies
+  	null, //version number
+  	true //load in footer
+  );
+
+
+  wp_enqueue_script(
+    'lazy', //handle
+    get_template_directory_uri() . '/js/jquery.lazylinepainter.min.js', //source
+    false, //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
     'plugins', //handle
     get_template_directory_uri() . '/js/plugins.js', //source
     false, //dependencies
