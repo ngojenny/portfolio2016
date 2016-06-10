@@ -17,9 +17,11 @@
 @import 'work';
 @import 'skills';
 @import 'contact';
+@import 'singlePortfolio';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'mediaqueries';
 /*
 ====================================
 Default Styling
@@ -52,17 +54,5 @@ body {
 .main-gallery {
 	width: 100%;
 }
-
-
-//test
-.gallery-item {
-	width: 100%;
-	background: purple;
-	border: 2px solid black;
-	text-align: center;
-}
-
-
-
 
 

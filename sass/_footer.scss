@@ -1,10 +1,9 @@
 /* FOOTER */
 footer {
-	.wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
 	a {
 		display: inline-block;
 		padding: 5px;

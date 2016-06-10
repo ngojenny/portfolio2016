@@ -34,6 +34,7 @@ a {
 	font-family: $baseFont;
 	color: #BA209B;
 	text-decoration: none;
+	transition: color 0.3s;
 	&:hover {
 		color: #9B9B9B;
 	}

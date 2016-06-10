@@ -1,0 +1,50 @@
+@media (max-width: 1040px) {
+	/* header styles changes*/
+	header {
+		.keyboard {
+			top: 63%;
+		}
+		.pencil {
+			top: 60%;
+			width: 16%;
+		}
+
+		.notebook {
+			width: 18%;
+		}
+
+		.iphone {
+			width: 20%;
+		}
+
+		.paperclip1 {
+			bottom: 22%;
+			left: 15%;
+		}
+
+		.paperclip2 {
+			bottom: 10%;
+			left: 17%;
+		}
+
+	}
+	
+}
+
+@media (max-width: 780px) {
+	/* global styles changes */
+	.wrapper {
+		width: 75%;
+	}
+
+	/* work styles changes*/
+	.portfolio-piece {
+		width: 100%;
+	}
+
+	/* skills styles changes */
+	.skills-item {
+		width: 80px;
+		height: 80px;
+	}
+}

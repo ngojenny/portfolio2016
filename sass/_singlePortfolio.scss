@@ -1,0 +1,86 @@
+/*SINGLE PORTFOLIO PAGE STYLES*/
+.portfolio-single{
+	position: relative;
+	padding-top: 0;
+	.portfolio-title {
+		position: absolute;
+		top: 30px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		font-size: 2.4rem;
+		text-align: center;
+
+	}
+	.wrapper {
+		padding: 70px 0;
+		width: 60%;
+		text-align: center;
+		max-width: 750px;
+	}
+	p {
+		font-family: $headingFont;
+		letter-spacing: 1px;
+		line-height: 2;
+	}
+	h3 {
+		display: inline-block;
+		padding-bottom: 10px;
+		text-transform: uppercase;
+		font-size: 2.3rem;
+		border-bottom: 4px solid $blue;
+	}
+}
+
+.btn-single {
+	position: absolute;
+	top: 44%;
+	left: calc(50% - 75px);
+	padding: 10px 25px;
+	border-radius: 0;
+	font-size: 1.7rem;
+	color: $black;
+	border-color: $black;
+}
+
+.gallery-item {
+	width: 100%;
+	padding: 80px 0 110px;
+	text-align: center;
+	img {
+		width: 45%;
+	}
+} 
+
+.tag-single-page {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+	li {
+		display: inline-block;
+		padding: 5px 10px;
+		min-width: 80px;
+		font-family: $headingFont;
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 5px;
+	}
+	li:nth-child(1){
+		background-color: $purple;
+	}
+	li:nth-child(2){
+		background-color: $mint;
+	}
+	li:nth-child(3){
+		background-color: $coral;
+	}
+	li:nth-child(4){
+		background-color: $lilac;
+	}
+	li:nth-child(5){
+		background-color: $blue;
+	}
+}

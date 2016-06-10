@@ -1,24 +1,23 @@
 <footer>
-	<div class="wrapper">
-		<p>Developed by Jenny Ngo | Graphics from these designers</p>
-		<ul class="footer-nav">
-			<li>
-				<a href="https://twitter.com/_jennyngo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			</li>
-			<li>
-				<a href="https://ca.linkedin.com/in/jennyngo1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-			</li>
-			<li>
-				<a href="https://github.com/ngojenny"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-			</li>
-			<li>
-				<a href="http://codepen.io/jenobot/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-			</li>
-			<li>
-				<a href="https://medium.com/@_jennyngo"><i class="fa fa-medium" aria-hidden="true"></i></a>
-			</li>
-		</ul>
-	</div>
+	<p>Developed by Jenny Ngo | Graphics from these designers</p>
+	<ul class="footer-nav">
+		<li>
+			<a href="https://twitter.com/_jennyngo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</li>
+		<li>
+			<a href="https://ca.linkedin.com/in/jennyngo1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		</li>
+		<li>
+			<a href="https://github.com/ngojenny"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+		</li>
+		<li>
+			<a href="http://codepen.io/jenobot/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+		</li>
+		<li>
+			<a href="https://medium.com/@_jennyngo"><i class="fa fa-medium" aria-hidden="true"></i></a>
+		</li>
+	</ul>
+
 </footer>
 
 <script>
