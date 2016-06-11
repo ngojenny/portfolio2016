@@ -8,6 +8,7 @@
 	<title>Jenny Ngo | Front-End Developer</title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 	<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
 
 	<!-- stylesheets should be enqueued in functions.php -->

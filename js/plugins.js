@@ -10,11 +10,6 @@ $(function() {
 		speed: 600
 	});
 
-	// $('#demo').lazylinepainter({
- //        'svgData' : svgData, // the object containing the SVG path info
- //        'strokeWidth':7,
- //        'strokeColor':'#de8f8f',
- //        'ease': 'easeInOutExpo'
- //    }
-// )
+	// wow js
+    new WOW().init();
 }); 

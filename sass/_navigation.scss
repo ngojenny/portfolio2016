@@ -13,3 +13,89 @@
 		letter-spacing: 5px;
 	}
 }
+
+/* burger menu styling for responsive */
+.burger-menu {
+	display: none;
+	z-index: 15;
+	width: 35px;
+	height: 35px;
+	padding: 1px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	left: auto;
+	cursor: pointer;
+	background-color: fade-out($blue, 0.5);
+	border-radius: 3px;
+}
+
+.top-nav .social-media {
+	display: none;
+}
+
+.social-media.show-social {
+	justify-content: center;
+	margin-top: 30px;
+	li {
+		width: auto;
+		margin: 5px;
+	}
+	a {
+		font-size: 1.8rem;
+		padding: 5px;
+		color: $black;
+		transition: color 0.3s;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+.social-media.show-social li::after {
+	background-color: transparent;
+}
+
+.top-nav .social-media.show-social {
+	display: flex;
+}
+
+.menu-line {
+	background-color: $black;
+	height: 4px;
+	width: 24px;
+	border-radius: 2px;
+	position: absolute;
+	left: 5px;
+	transition: top 0.2s;
+}
+
+.menu-top-line {
+	top: 7px;
+}
+
+.menu-middle-line {
+	top: 15px;
+}
+
+.menu-bottom-line {
+	top: 23px;
+}
+
+.to-x-top {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 15px;
+}
+
+.to-x-middle {
+	opacity: 0;
+}
+
+.to-x-bottom {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 15px;
+}

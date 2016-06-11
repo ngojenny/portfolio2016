@@ -44,9 +44,9 @@ i.fa-diamond {
 
 .skills-item {
 	position: relative;
-	margin: 8px;
-	width: 90px;
-	height: 90px;
+	margin: 6px;
+	width: 88px;
+	height: 88px;
 	perspective: 500px;
 }
 
@@ -58,72 +58,61 @@ i.fa-diamond {
 	backface-visibility:hidden;
 }
 
-//know container flips
-
-.container-know .skills-item:nth-child(1) .front {
+//skill icon flips
+.skills-item:nth-child(1) .front {
 	background-color: $mint;
 }
 
-.container-know .skills-item:nth-child(2) .front {
+.skills-item:nth-child(2) .front {
 	background-color: $purple;
 }
 
-.container-know .skills-item:nth-child(3) .front {
+.skills-item:nth-child(3) .front {
 	background-color: $coral;
 }
 
-.container-know .skills-item:nth-child(4) .front {
+.skills-item:nth-child(4) .front {
 	background-color: $lilac;
 }
 
-.container-know .skills-item:nth-child(5) .front {
+.skills-item:nth-child(5) .front {
 	background-color: $mint;
 }
 
-.container-know .skills-item:nth-child(6) .front {
+.skills-item:nth-child(6) .front {
 	background-color: $coral;
 }
 
-.container-know .skills-item:nth-child(7) .front {
+.skills-item:nth-child(7) .front {
 	background-color: $lilac;
 }
 
-.container-know .skills-item:nth-child(8) .front {
+.skills-item:nth-child(8) .front {
 	background-color: $coral;
 }
 
-
-.container-know .skills-item:nth-child(9) .front {
+.skills-item:nth-child(9) .front {
 	background-color: $mint;
 }
 
-.container-know .skills-item:nth-child(10) .front {
+.skills-item:nth-child(10) .front {
 	background-color: $purple;
 }
 
-.container-know .skills-item:nth-child(11) .front {
-	background-color: $lilac;
-}
-
-.container-know .skills-item:nth-child(12) .front {
+.skills-item:nth-child(11) .front {
 	background-color: $mint;
 }
 
-//learn container flips
-.container-learn .skills-item:nth-child(1) .front {
-	background-color: $mint;
-}
-
-.container-learn .skills-item:nth-child(2) .front {
-	background-color: $purple;
-}
-
-.container-learn .skills-item:nth-child(3) .front {
+.skills-item:nth-child(12) .front {
 	background-color: $coral;
 }
 
-.container-learn .skills-item:nth-child(4) .front {
+.skills-item:nth-child(13) .front {
 	background-color: $lilac;
+}
+
+.skills-item:nth-child(14) .front {
+	background-color: $purple;
 }
 
 .back {

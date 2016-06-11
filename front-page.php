@@ -10,8 +10,13 @@ get_header();  ?>
 <!-- HEADER STARTS-->
 <header id="home">
 	<!-- NAVIGATION STARTS-->
-	<nav>
-		<div class="wrapper-nav">
+	<div class="burger-menu">
+		<span class="menu-line menu-top-line"></span>
+		<span class="menu-line menu-middle-line"></span>
+		<span class="menu-line menu-bottom-line"></span>
+	</div>
+	<nav class="top-nav">
+		<div class="wrapper-nav main-wrapper-nav">
 			<ul class="main-nav">
 				<li>
 					<a href="#home">Home</a>
@@ -27,6 +32,24 @@ get_header();  ?>
 				</li>
 				<li>
 					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+
+			<ul class="social-media footer-nav">
+				<li>
+					<a href="https://twitter.com/_jennyngo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://ca.linkedin.com/in/jennyngo1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://github.com/ngojenny"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="http://codepen.io/jenobot/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://medium.com/@_jennyngo"><i class="fa fa-medium" aria-hidden="true"></i></a>
 				</li>
 			</ul>
 		</div> <!-- /.wrapper -->
@@ -47,7 +70,7 @@ get_header();  ?>
 
 <!-- ABOUT SECTION STARTS -->
 <section class="about" id="about">
-	<div class="wrapper">
+	<div class="wrapper wow fadeInUp">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<h2>About</h2>
 			<?php the_content(); ?>
@@ -70,17 +93,17 @@ get_header();  ?>
 						$portfolioQuery->the_post();
 						?>
 						<div class="portfolio-piece" style="background:<?php echo get_field('background_color') ?>;">
-							<h3><?php the_title() ?></h3>
+							<h3 class="wow fadeInUp"><?php the_title() ?></h3>
 						
 
-							<div class="portfolio-image">
+							<div class="portfolio-image wow fadeInUp">
 								<img src="<?php the_post_thumbnail_url('large'); ?>" alt="Macbook Pro displaying header of Project">
 							</div>
-							<p class="buzz"><?php the_field('buzz_words') ?></p>
+							<p class="buzz wow fadeInUp"><?php the_field('buzz_words') ?></p>
 							<p><?php the_field('short_desc') ?></p>
 
-							<div class="portfolio-overlay">
-								<a class="btn btn-front btn-live" href="<?php the_permalink() ?>">Details</a>
+							<div class="portfolio-overlay wow fadeInUp">
+								<a class="btn btn-front btn-live" href="<?php the_permalink() ?>">MORE INFO</a>
 								<a class="btn btn-front btn-live" href="<?php the_field('view_live')?>">View live</a>
 							</div>
 						</div>
@@ -155,10 +178,26 @@ get_header();  ?>
 				</div>
 				<div class="skills-item">
 					<div class="front">
+						<span class="devicons devicons-terminal"></span>
+					</div>
+					<div class="back">
+						<p>Terminal</p>
+					</div>
+				</div>
+				<div class="skills-item">
+					<div class="front">
 						<span class="devicons devicons-github_alt"></span>
 					</div>
 					<div class="back">
 						<p>Github</p>
+					</div>
+				</div>
+				<div class="skills-item">
+					<div class="front">
+						<span class="devicons devicons-git"></span>
+					</div>
+					<div class="back">
+						<p>Git</p>
 					</div>
 				</div>
 				<div class="skills-item">
@@ -200,6 +239,14 @@ get_header();  ?>
 			<div class="container container-learn wow fadeInUp clearfix">
 				<div class="skills-item">
 					<div class="front">
+						<i class="devicons devicon-react-original"></i>
+					</div>
+					<div class="back">
+						<p>React</p>
+					</div>
+				</div>
+				<div class="skills-item">
+					<div class="front">
 						<span class="devicons devicons-ruby"></span>
 					</div>
 					<div class="back">
@@ -216,18 +263,18 @@ get_header();  ?>
 				</div>
 				<div class="skills-item">
 					<div class="front">
-						<span class="devicons devicons-nodejs_small"></span>
+						<span class="devicons devicons-angular"></span>
 					</div>
 					<div class="back">
-						<p>Node.js</p>
+						<p>Angular</p>
 					</div>
 				</div>
 				<div class="skills-item">
 					<div class="front">
-						<span class="devicons devicons-angular"></span>
+						<span class="devicons devicons-nodejs_small"></span>
 					</div>
 					<div class="back">
-						<p>AngularJS</p>
+						<p>Node</p>
 					</div>
 				</div>
 			</div> <!-- /.container -->
@@ -237,7 +284,7 @@ get_header();  ?>
 <!-- CONTACT SECTION STARTS -->
 <section class="contact" id="contact">
 	<img class="tinphone" src="wp-content/themes/portfolio2016/images/tinphone.svg" alt="Outline of tin cans connected with string">
-	<div class="wrapper">
+	<div class="wrapper wow fadeInUp">
 		<h2>Contact</h2>
 		<div class="flex-container">
 			<div class="contact-info">

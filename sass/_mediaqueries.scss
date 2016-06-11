@@ -32,18 +32,65 @@
 }
 
 @media (max-width: 795px) {
-	/*header styles changes*/
-	header {
-		h1 {
-			font-size: 6.2rem;
-		}
-		h2 {
-			font-size: 1.6rem;
-		}
-	}
 	/* global styles changes */
 	.wrapper {
 		width: 75%;
+	}
+
+	/*header styles changes*/
+	header {
+		h1 {
+			font-size: 6rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+			letter-spacing: 5px;
+		}
+	}
+
+	/* nav style changes*/
+	.burger-menu {
+		display: block;
+	}
+	
+	.top-nav {
+		width: 50%;
+		position: fixed;
+		top: 0;
+		right: -50%;
+		bottom: 0;
+		z-index: 10;
+		background-color:  rgba(255,255,255,0.97);
+		box-shadow: 1px 1px 10px fade-out($grey, 0.7);
+		transition: right 0.3s;
+		.main-nav{
+			flex-direction: column;
+			margin-top: 35%;
+		}
+		li {
+			position: relative;
+			margin: 10px;
+			width: 100%;
+			&::after {
+				content: "";
+				height: 2px;
+				width: 40px;
+				background-color: fade-out($blue, 0.5);
+				position: absolute;
+				bottom: -5px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		li:last-child::after {
+			background-color: transparent;
+		}
+
+	}
+
+	.top-nav.slide-out {
+		right: 0;
 	}
 
 	/* work styles changes*/
@@ -71,4 +118,16 @@
 	.sideways {
 		left: 5px;
 	}
+	/* contact style changes */
+	.tinphone {
+		width: 35%;
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		left: auto;
+	}
+}
+
+@media (max-width: 518px) {
+	
 }
