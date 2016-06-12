@@ -2,7 +2,8 @@
 $(function() {
 	//flickity 
 	$('.main-gallery').flickity({
-		imagesLoaded: true
+		imagesLoaded: true,
+		wrapAround: true
 	});
 
 	//smoothScroll

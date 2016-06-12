@@ -15,6 +15,9 @@ $(function(){
 	//close nav after clicking links
 	$('.main-nav a').on('click', function(){
 		$('.top-nav').toggleClass('slide-out');
+		$('.menu-top-line').toggleClass('to-x-top');
+		$('.menu-middle-line').toggleClass('to-x-middle');
+		$('.menu-bottom-line').toggleClass('to-x-bottom');
 	});
 
 });
