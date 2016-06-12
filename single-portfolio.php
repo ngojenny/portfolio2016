@@ -1,25 +1,49 @@
 <?php get_header(); ?>
 
 <!-- NAVIGATION STARTS-->
-<nav>
-    <ul class="main-nav">
-        <li>
-            <a href="http://localhost:3000/portfolio">Home</a>
-        </li>
-        <li>
-            <a href="http://localhost:3000/portfolio#about">About</a>
-        </li>
-        <li>
-            <a href="http://localhost:3000/portfolio#work">Work</a>
-        </li>
-        <li>
-            <a href="http://localhost:3000/portfolio#skills">Skills</a>
-        </li>
-        <li>
-            <a href="http://localhost:3000/portfolio#contact">Contact</a>
-        </li>
-    </ul>
+<div class="burger-menu">
+    <span class="menu-line menu-top-line"></span>
+    <span class="menu-line menu-middle-line"></span>
+    <span class="menu-line menu-bottom-line"></span>
+</div>
+<nav class="top-nav top-nav-single">
+    <div class="wrapper-nav main-wrapper-nav">
+        <ul class="main-nav">
+            <li>
+                <a href="http://jennyngo.io">Home</a>
+            </li>
+            <li>
+                <a href="http://jennyngo.io#about">About</a>
+            </li>
+            <li>
+                <a href="http://jennyngo.io#work">Work</a>
+            </li>
+            <li>
+                <a href="http://jennyngo.io#skills">Skills</a>
+            </li>
+            <li>
+                <a href="http://jennyngo.io#contact">Contact</a>
+            </li>
+        </ul>
 
+        <ul class="social-media footer-nav">
+            <li>
+                <a href="https://twitter.com/_jennyngo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://ca.linkedin.com/in/jennyngo1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/ngojenny"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="http://codepen.io/jenobot/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://medium.com/@_jennyngo"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div> <!-- /.wrapper -->
 </nav>
 
 <section class="portfolio-single">
@@ -43,6 +67,9 @@
                 ?>
             </div>
             <a class="btn btn-single" href="<?php the_field('view_live')?>">View live</a>
+   </section>
+
+   <section class="about-portfolio-single">
             <div class="wrapper">
                 <h3>About project</h3>
                 <p><?php the_content(); ?></p>
@@ -52,7 +79,7 @@
                 $value = $tagField['value'];
                 $choices = $tagField['choices'];
                 if($value): ?>
-                <ul class="tag-single-page">
+                <ul class="tag-single-page wow flipInX">
                     <?php foreach( $value as $v ): ?>
                     <li>
                         <?php echo $choices[$v]; ?>

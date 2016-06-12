@@ -17,5 +17,4 @@ $(function(){
 		$('.top-nav').toggleClass('slide-out');
 	});
 
-
 });
