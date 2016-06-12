@@ -70,26 +70,25 @@
    </section>
 
    <section class="about-portfolio-single">
-            <div class="wrapper">
-                <h3>About project</h3>
-                <p><?php the_content(); ?></p>
+        <div class="wrapper">
+            <h3>About project</h3>
+            <p><?php the_content(); ?></p>
 
-                <?php 
-                $tagField = get_field_object('tags');
-                $value = $tagField['value'];
-                $choices = $tagField['choices'];
-                if($value): ?>
-                <ul class="tag-single-page wow flipInX">
-                    <?php foreach( $value as $v ): ?>
-                    <li>
-                        <?php echo $choices[$v]; ?>
-                    </li>
-                    <?php endforeach; ?>
+            <?php 
+            $tagField = get_field_object('tags');
+            $value = $tagField['value'];
+            $choices = $tagField['choices'];
+            if($value): ?>
+            <ul class="tag-single-page wow flipInX">
+                <?php foreach( $value as $v ): ?>
+                <li>
+                    <?php echo $choices[$v]; ?>
+                </li>
+                <?php endforeach; ?>
 
-                </ul>
-                <?php endif; ?>
-            </div> <!-- /.wrapper -->
-
+            </ul>
+            <?php endif; ?>
+        </div> <!-- /.wrapper -->
             <?php
             }
         }
