@@ -44,6 +44,7 @@
 	}
 
 	.gallery-item:nth-child(2) {
+		padding: 80px 0 113px;
 		img {
 			width: 68%;
 		}
@@ -51,7 +52,7 @@
 
 	.gallery-item:nth-child(3) {
 		img {
-			width: 29%;
+			width: 29.5%;
 		}
 	}
 
@@ -177,14 +178,15 @@
 
 	/* single portfolio style changes */
 	.gallery-item {
-		padding: 100px 0 130px;
+		padding: 100px 0 131px;
 	}
 	.gallery-item img {
-		width: 50%;
+		width: 58%;
 	}
 	.gallery-item:nth-child(2) {
+		padding: 80px 0 116px;
 		img {
-			width: 72%;
+			width: 83%;
 		}
 	}
 
@@ -230,7 +232,11 @@
 	}
 	/* single portfolio style changes */
 	.gallery-item img {
-		width: 75%;
+		width: 77%;
+	}
+
+	.gallery-item:nth-child(1) {
+		padding: 90px 0 138px;
 	}
 
 	.gallery-item:nth-child(2) {
@@ -282,5 +288,14 @@
 
 	i.fa-diamond {
 		font-size: 4rem;
+	}
+
+	/* single portfolio style changes */
+	.gallery-item:nth-child(1) {
+		padding: 90px 0 140px;
+	}
+
+	.gallery-item:nth-child(2) {
+		padding: 120px 0 137px;
 	}
 }
