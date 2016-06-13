@@ -6,8 +6,8 @@
 
 get_header();  ?>
 
-<div class="main">
-	<div class="container">
+<section class="main">
+	<div class="wrapper">
 		<?php // Start the loop ?>
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -15,7 +15,7 @@ get_header();  ?>
 		  <?php the_content(); ?>
 
 		<?php endwhile; // end the loop?>
-	</div> <!-- /.container -->
-</div> <!-- /.main -->
+	</div> <!-- /.wrapper -->
+</section> <!-- /.main -->
 
 <?php get_footer(); ?>

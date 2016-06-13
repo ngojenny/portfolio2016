@@ -2,6 +2,7 @@
 .contact {
 	position: relative;
 	background-color: $blue;
+	overflow: hidden;
 	.flex-container {
 		justify-content: space-between;
 	}
@@ -110,4 +111,11 @@
 	letter-spacing: 1px;
 	color: $grey;
 	transform: rotate(-90deg)
+}
+
+/* validation message */
+div.wpcf7-mail-sent-ok {
+	font-family: $headingFont;
+	color: $grey;
+	border: 2px solid #ffffff;
 }

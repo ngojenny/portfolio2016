@@ -37,12 +37,16 @@ footer {
 	li:nth-of-type(5) {
 		background-color: $blue;
 	}
-	p {
+	p, .by-line a {
+		display: inline;
 		font-family: $headingFont;
 		text-transform: uppercase;
 		color: $grey;
 		font-size: 1.3rem;
 		letter-spacing: 2px;
+	}
+	.by-line a {
+		padding: 0;
 	}
 }
 .footer-nav {

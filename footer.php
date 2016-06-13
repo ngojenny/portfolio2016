@@ -1,5 +1,5 @@
 <footer>
-	<p>Developed by Jenny Ngo | Graphics from these designers</p>
+	<p class="by-line">Developed by <a href="https://twitter.com/_jennyngo">Jenny Ngo</a> | Graphics from these <a href=" http://jennyngo.io/credits/">designers</a></p>
 	<ul class="footer-nav">
 		<li>
 			<a href="https://twitter.com/_jennyngo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
