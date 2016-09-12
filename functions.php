@@ -71,7 +71,7 @@ function hackeryou_scripts() {
 
   wp_enqueue_script(
   	'flickityjs',
-  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js",
+  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://unpkg.com/flickity@1.2/dist/flickity.pkgd.min.js",
   	false, //dependencies
   	null, //version number
   	true //load in footer
